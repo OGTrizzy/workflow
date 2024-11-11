@@ -1,5 +1,6 @@
-import { login, logout } from "./src/js/api/auth";
-
+import { login, logout } from "./src/js/api/auth"; //if npx jest is not working then type this in terminal i had to install this 3 times, 
+                                                  //everytime i get back to this after looking into another branch, i dont know why it get lost or disappear
+                                                //  npm install --save-dev jest-environment-jsdom
 global.fetch = jest.fn();
 
 describe('login function', () => {
