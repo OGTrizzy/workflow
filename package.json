@@ -8,7 +8,9 @@
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "postinstall": "husky install",
+    "test": "echo 'no tests specified' && exit 0"
   },
   "lint-staged": {
     "*.js": [
@@ -25,7 +27,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.12.0",
-    "husky": "^9.1.6",
+    "husky": "^8.0.3",
     "lint-staged": "^15.2.10",
     "live-server": "^1.2.0",
     "prettier": "^3.3.3",
